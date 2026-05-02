@@ -1,0 +1,3 @@
+# boto3 is included in the AWS Lambda Python runtime.
+# No third-party packages required for the base handler.
+# If you add requests or other deps, list them here and include in the zip.

@@ -1,0 +1,54 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "hermes",
+      "intents": [
+        {
+          "name": "ChatIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "ask hermes {query}",
+            "tell me {query}",
+            "I want to know {query}",
+            "explain {query}",
+            "what is {query}",
+            "how does {query}",
+            "why is {query}",
+            "say {query}",
+            "{query}"
+          ]
+        },
+        {
+          "name": "ClearHistoryIntent",
+          "samples": [
+            "clear history",
+            "start over",
+            "new conversation",
+            "forget everything",
+            "reset"
+          ]
+        },
+        {
+          "name": "AMAZON.RepeatIntent"
+        },
+        {
+          "name": "AMAZON.HelpIntent"
+        },
+        {
+          "name": "AMAZON.CancelIntent"
+        },
+        {
+          "name": "AMAZON.StopIntent"
+        },
+        {
+          "name": "AMAZON.FallbackIntent"
+        }
+      ]
+    }
+  }
+}

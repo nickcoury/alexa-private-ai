@@ -1,0 +1,43 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Talk to Hermes AI via Alexa",
+          "examplePhrases": [
+            "Alexa, open Hermes",
+            "Alexa, ask Hermes what is quantum computing",
+            "Alexa, ask Hermes to explain general relativity"
+          ],
+          "name": "Hermes Private AI",
+          "description": "A private Alexa skill that forwards voice queries to a local Hermes AI agent. Supports multi-turn conversations with context memory."
+        }
+      },
+      "isAvailableWorldwide": false,
+      "testingInstructions": "Say 'Alexa, open Hermes' to start. Ask any question. Say 'stop' to end.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": ["US"]
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:YOUR_AWS_ACCOUNT_ID:function:alexa-hermes-lambda"
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {
+          "privacyPolicyUrl": "",
+          "termsOfUseUrl": ""
+        }
+      },
+      "isExportCompliant": true,
+      "containsAds": false,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}
