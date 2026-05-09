@@ -5,7 +5,7 @@
 set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-SKILL_NAME="Hermes Private AI"
+SKILL_NAME="Hermes"
 FUNCTION_NAME="alexa-hermes-lambda"
 ROLE_NAME="alexa-hermes-lambda-role"
 TABLE_NAME="alexa-hermes-sessions"

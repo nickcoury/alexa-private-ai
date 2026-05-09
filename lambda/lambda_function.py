@@ -15,7 +15,7 @@ table = dynamodb.Table(os.environ.get('DYNAMODB_TABLE', 'alexa-hermes-sessions')
 
 SYSTEM_PROMPT = os.environ.get(
     'SYSTEM_PROMPT',
-    'You are Hermes, a helpful AI assistant accessed via Alexa voice. '
+    'You are Hermes, a helpful assistant accessed via Alexa voice. '
     'Keep responses concise but informative. Avoid markdown, bullet points, '
     'and special formatting that does not translate well to spoken audio. '
     'Use natural conversational language.'
@@ -63,7 +63,7 @@ def handle_intent(event):
 
     if intent_name == 'AMAZON.HelpIntent':
         return build_response(
-            "You can ask me anything and I'll consult Hermes A.I. "
+            "You can ask me anything and I'll consult Hermes. "
             "For example, say explain quantum computing, or what is the tallest mountain. "
             "Say stop when you're done.",
             reprompt="What would you like to know?",
@@ -125,7 +125,7 @@ def handle_intent(event):
     except Exception as e:
         print(f"Error calling Hermes: {e}")
         return build_response(
-            "Sorry, I'm having trouble connecting to Hermes right now. Please try again in a moment.",
+            "Sorry, I'm having trouble connecting right now. Please try again in a moment.",
             reprompt="Would you like to try again?",
             end_session=False
         )

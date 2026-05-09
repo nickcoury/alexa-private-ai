@@ -37,7 +37,7 @@ If Caddy is not running:
 
 1. Go to [Alexa Developer Console](https://developer.amazon.com/alexa/console/ask)
 2. Click **Create Skill**
-3. Name: `Hermes Private AI`
+3. Name: `Hermes`
 4. Default language: **English (US)**
 5. Choose **Custom** model
 6. Choose **Alexa-hosted (Node.js)** or **Provision your own** → select **Provision your own**
@@ -148,7 +148,7 @@ Or manually:
 
 1. Open the Alexa app on your phone
 2. Go to **More → Skills & Games → Your Skills → Dev**
-3. Find **Hermes Private AI** and enable it
+3. Find **Hermes** and enable it
 4. Say: **"Alexa, open Hermes"**
 5. Ask anything: **"What is the capital of France?"**
 

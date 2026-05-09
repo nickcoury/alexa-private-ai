@@ -3,14 +3,14 @@
     "publishingInformation": {
       "locales": {
         "en-US": {
-          "summary": "Talk to Hermes AI via Alexa",
+          "summary": "Talk to Hermes via Alexa",
           "examplePhrases": [
             "Alexa, open Hermes",
             "Alexa, ask Hermes what is quantum computing",
             "Alexa, ask Hermes to explain general relativity"
           ],
-          "name": "Hermes Private AI",
-          "description": "A private Alexa skill that forwards voice queries to a local Hermes AI agent. Supports multi-turn conversations with context memory."
+          "name": "Hermes",
+          "description": "Talk to Hermes, your personal AI assistant, through any Alexa device. Supports multi-turn conversations with context memory."
         }
       },
       "isAvailableWorldwide": false,
