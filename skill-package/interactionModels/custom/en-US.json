@@ -20,7 +20,9 @@
             "how does {query}",
             "why is {query}",
             "say {query}",
-            "{query}"
+            "tell me about {query}",
+            "I have a question about {query}",
+            "what do you think about {query}"
           ]
         },
         {
