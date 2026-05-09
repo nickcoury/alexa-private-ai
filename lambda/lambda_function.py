@@ -99,8 +99,23 @@ def handle_intent(event):
     query = slots.get('query', {}).get('value', '')
 
     if not query:
+        # Slot is empty - delegate to Alexa's dialog model for elicitation
+        dialog_state = event['request'].get('dialogState', '')
+        if dialog_state and dialog_state != 'COMPLETED':
+            return {
+                'version': '1.0',
+                'sessionAttributes': {},
+                'response': {
+                    'directives': [
+                        {
+                            'type': 'Dialog.Delegate'
+                        }
+                    ],
+                    'shouldEndSession': False
+                }
+            }
         return build_response(
-            "I didn't hear a question. What would you like to ask?",
+            "What would you like to know?",
             reprompt="What would you like to ask?",
             end_session=False
         )
